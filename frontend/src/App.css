@@ -610,18 +610,128 @@
   margin-bottom: 6px;
 }
 
+/* Mobile Menu & Responsive Styling */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-menu-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-menu-btn:hover {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: var(--primary);
+}
+
+.sidebar-close-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.sidebar-close-btn:hover {
+  color: #ffffff;
+  background: rgba(244, 63, 94, 0.2);
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 9998;
+  animation: fadeIn 0.2s ease;
+}
+
 /* Mobile responsive */
 @media (max-width: 860px) {
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .sidebar-close-btn {
+    display: flex;
+  }
+
   .sidebar {
     transform: translateX(-100%);
+    z-index: 9999;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.85);
   }
+
   .sidebar.open {
     transform: translateX(0);
   }
+
   .main-layout {
     margin-left: 0;
   }
-  .grid-2 {
+
+  .top-header {
+    padding: 0 14px;
+    height: auto;
+    min-height: 58px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 10px;
+  }
+
+  .header-page-title {
+    font-size: 1rem;
+  }
+
+  .header-badge {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .header-action-btn span {
+    display: none;
+  }
+
+  .header-action-btn {
+    padding: 6px 10px;
+  }
+
+  .backend-status-pill span:last-child {
+    display: none;
+  }
+
+  .backend-status-pill {
+    padding: 6px !important;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
     grid-template-columns: 1fr;
+  }
+
+  .page-content {
+    padding: 16px 14px;
   }
 }

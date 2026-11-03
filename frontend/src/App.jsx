@@ -11,10 +11,10 @@ import DataTransfer from './pages/DataTransfer';
 import ModelMetrics from './pages/ModelMetrics';
 import About from './pages/About';
 import { api } from './services/api';
-import { Sparkles, UserPlus, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Sparkles, UserPlus, Menu, X } from 'lucide-react';
 import './App.css';
 
-function Header() {
+function Header({ onToggleMenu, isMenuOpen }) {
   const location = useLocation();
   const [backendStatus, setBackendStatus] = useState('checking'); // 'connected' | 'error' | 'checking'
 
@@ -52,13 +52,24 @@ function Header() {
 
   return (
     <header className="top-header">
-      <div className="header-title-group">
-        <h2 className="header-page-title">{getPageTitle(location.pathname)}</h2>
-        <span className="header-badge">v1.0 Minor Project</span>
+      <div className="header-left">
+        <button
+          className="mobile-menu-btn"
+          onClick={onToggleMenu}
+          aria-label="Toggle navigation menu"
+        >
+          {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
+
+        <div className="header-title-group">
+          <h2 className="header-page-title">{getPageTitle(location.pathname)}</h2>
+          <span className="header-badge">v1.0 Minor Project</span>
+        </div>
       </div>
 
       <div className="header-actions">
         <div
+          className="backend-status-pill"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -110,18 +121,18 @@ function Header() {
             }}
           >
             {backendStatus === 'connected'
-              ? 'Backend: Online (DRF)'
+              ? 'Backend: Online'
               : backendStatus === 'error'
               ? 'Backend: Offline'
               : 'Connecting...'}
           </span>
         </div>
 
-        <Link to="/students/new" className="btn btn-secondary btn-sm">
-          <UserPlus size={14} /> Register
+        <Link to="/students/new" className="btn btn-secondary btn-sm header-action-btn">
+          <UserPlus size={14} /> <span>Register</span>
         </Link>
-        <Link to="/predict" className="btn btn-primary btn-sm">
-          <Sparkles size={14} /> Predict
+        <Link to="/predict" className="btn btn-primary btn-sm header-action-btn">
+          <Sparkles size={14} /> <span>Predict</span>
         </Link>
       </div>
     </header>
@@ -129,12 +140,26 @@ function Header() {
 }
 
 export default function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <BrowserRouter>
       <div className="app-container">
-        <Sidebar />
+        {sidebarOpen && (
+          <div
+            className="sidebar-backdrop"
+            onClick={() => setSidebarOpen(false)}
+          />
+        )}
+        <Sidebar
+          isOpen={sidebarOpen}
+          onClose={() => setSidebarOpen(false)}
+        />
         <div className="main-layout">
-          <Header />
+          <Header
+            onToggleMenu={() => setSidebarOpen(!sidebarOpen)}
+            isMenuOpen={sidebarOpen}
+          />
           <main className="page-content">
             <Routes>
               <Route path="/" element={<Dashboard />} />

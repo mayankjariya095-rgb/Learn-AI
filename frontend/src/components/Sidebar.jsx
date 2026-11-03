@@ -10,10 +10,11 @@ import {
   ArrowUpDown,
   Cpu,
   Info,
-  GraduationCap
+  GraduationCap,
+  X
 } from 'lucide-react';
 
-export default function Sidebar() {
+export default function Sidebar({ isOpen, onClose }) {
   const navItems = [
     { to: '/', label: 'Dashboard', icon: LayoutDashboard },
     { to: '/students', label: 'Students List', icon: Users },
@@ -27,15 +28,20 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
       <div className="sidebar-brand">
         <div className="brand-icon">
           <GraduationCap size={26} color="#ffffff" />
         </div>
         <div className="brand-text">
           <h2>LearnAI</h2>
-          <span className="brand-subtitle">Outcome Prediction System</span>
+          <span className="brand-subtitle">Outcome Prediction</span>
         </div>
+        {onClose && (
+          <button className="sidebar-close-btn" onClick={onClose} aria-label="Close menu">
+            <X size={20} />
+          </button>
+        )}
       </div>
 
       <div className="sidebar-tag">
@@ -50,6 +56,9 @@ export default function Sidebar() {
             <NavLink
               key={item.to}
               to={item.to}
+              onClick={() => {
+                if (onClose) onClose();
+              }}
               className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             >
               <Icon size={19} className="nav-icon" />
