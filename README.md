@@ -1,6 +1,6 @@
 # 🎓 LearnAI — Student Learning Outcome Prediction Platform
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live%20Online-brightgreen?style=for-the-badge&logo=cloudflare)](https://northern-stripes-framed-experts.trycloudflare.com)
+[![Live Demo](https://img.shields.io/badge/Demo-24%2F7%20Permanent%20Live-brightgreen?style=for-the-badge&logo=pythonanywhere)](https://mayankjariya24.pythonanywhere.com)
 [![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
 [![Django](https://img.shields.io/badge/Backend-Django%20REST-092E20?style=for-the-badge&logo=django)](https://www.djangoproject.com/)
 [![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn)](https://scikit-learn.org/)
@@ -9,11 +9,11 @@
 
 ---
 
-## 🌐 Live Demo
+## 🌐 24/7 Permanent Live URL
 
 🔗 **Public Live Application:**  
-👉 **[https://northern-stripes-framed-experts.trycloudflare.com](https://northern-stripes-framed-experts.trycloudflare.com)**  
-*(Accessible on mobile phones, tablets, and desktop browsers worldwide)*
+👉 **[https://mayankjariya24.pythonanywhere.com](https://mayankjariya24.pythonanywhere.com)**  
+*(Runs 24/7 continuously without requiring a laptop to be running — accessible on mobile phones, tablets, and computers worldwide)*
 
 ---
 
