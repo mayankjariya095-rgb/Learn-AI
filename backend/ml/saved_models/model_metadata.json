@@ -1,0 +1,44 @@
+{
+  "selected_model": "Linear Regression (Baseline)",
+  "model_version": "RF-v1.2",
+  "trained_at": "2026-10-26T14:24:59.681595+00:00",
+  "dataset_path": "D:\\learnAI\\backend\\dataset\\student_data_train.csv",
+  "total_records": 750,
+  "train_records": 600,
+  "test_records": 150,
+  "features": [
+    "study_hours_per_day",
+    "attendance_percentage",
+    "assignment_score",
+    "previous_exam_marks"
+  ],
+  "target": "final_exam_marks",
+  "baseline_comparison": {
+    "model": "Linear Regression (Baseline)",
+    "metrics": {
+      "mae": 2.671,
+      "rmse": 3.524,
+      "r2_score": 0.9557
+    }
+  },
+  "complex_model": {
+    "model": "Random Forest Regressor",
+    "metrics": {
+      "mae": 2.895,
+      "rmse": 3.672,
+      "r2_score": 0.9519
+    }
+  },
+  "selected_metrics": {
+    "mae": 2.671,
+    "rmse": 3.524,
+    "r2_score": 0.9557
+  },
+  "feature_importances_pct": {
+    "study_hours_per_day": 26.21,
+    "attendance_percentage": 19.0,
+    "assignment_score": 23.98,
+    "previous_exam_marks": 30.8
+  },
+  "academic_disclaimer": "Model trained on synthetic pedagogical dataset for college minor project demonstration. Real institutional deployment requires calibration on validated university records."
+}

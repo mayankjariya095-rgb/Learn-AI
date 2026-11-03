@@ -1,0 +1,1 @@
+# LearnAI Django Config Package
