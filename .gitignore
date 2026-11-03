@@ -52,7 +52,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Vite build output
-frontend/dist/
+# frontend/dist/
 frontend/dist-ssr/
 frontend/*.local
 
@@ -73,3 +73,5 @@ Thumbs.db
 *.swp
 *.swo
 
+
+cloudflared.exe

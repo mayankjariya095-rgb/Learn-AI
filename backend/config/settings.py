@@ -14,7 +14,7 @@ SECRET_KEY = os.environ.get(
 
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -49,10 +49,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'config.urls'
 
+FRONTEND_DIR = BASE_DIR.parent / 'frontend' / 'dist'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [FRONTEND_DIR] if FRONTEND_DIR.exists() else [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,6 +91,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+WHITENOISE_ROOT = FRONTEND_DIR if FRONTEND_DIR.exists() else None
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
