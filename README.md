@@ -70,3 +70,4 @@ Just double-click **`run_project.bat`** to start both servers automatically.
 - 📋 Prediction history
 - 🧑‍🎓 Student management (CRUD)
 - 📤 Data import/export
+
