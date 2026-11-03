@@ -104,3 +104,4 @@ echo.
 ping 127.0.0.1 -n 2 >nul
 cd /d %~dp0
 call run_project.bat
+
