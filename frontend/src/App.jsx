@@ -11,7 +11,7 @@ import DataTransfer from './pages/DataTransfer';
 import ModelMetrics from './pages/ModelMetrics';
 import About from './pages/About';
 import { api } from './services/api';
-import { Sparkles, UserPlus, Menu, X } from 'lucide-react';
+import { TrendingUp, UserPlus, Menu, X } from 'lucide-react';
 import './App.css';
 
 function Header({ onToggleMenu, isMenuOpen }) {
@@ -63,7 +63,7 @@ function Header({ onToggleMenu, isMenuOpen }) {
 
         <div className="header-title-group">
           <h2 className="header-page-title">{getPageTitle(location.pathname)}</h2>
-          <span className="header-badge">v1.0 Minor Project</span>
+          <span className="header-badge">Session 2026-27 | BCA</span>
         </div>
       </div>
 
@@ -80,14 +80,14 @@ function Header({ onToggleMenu, isMenuOpen }) {
               backendStatus === 'connected'
                 ? 'rgba(16, 185, 129, 0.1)'
                 : backendStatus === 'error'
-                ? 'rgba(244, 63, 94, 0.1)'
-                : 'rgba(255, 255, 255, 0.05)',
+                ? 'rgba(220, 38, 38, 0.1)'
+                : '#1e293b',
             border: `1px solid ${
               backendStatus === 'connected'
                 ? 'rgba(16, 185, 129, 0.25)'
                 : backendStatus === 'error'
-                ? 'rgba(244, 63, 94, 0.25)'
-                : 'var(--border-subtle)'
+                ? 'rgba(220, 38, 38, 0.25)'
+                : '#334155'
             }`,
             fontSize: '0.75rem',
             fontWeight: 600,
@@ -95,8 +95,8 @@ function Header({ onToggleMenu, isMenuOpen }) {
         >
           <span
             style={{
-              width: 8,
-              height: 8,
+              width: 7,
+              height: 7,
               borderRadius: '50%',
               backgroundColor:
                 backendStatus === 'connected'
@@ -104,10 +104,6 @@ function Header({ onToggleMenu, isMenuOpen }) {
                   : backendStatus === 'error'
                   ? 'var(--accent-rose)'
                   : 'var(--accent-amber)',
-              boxShadow:
-                backendStatus === 'connected'
-                  ? '0 0 8px var(--accent-emerald)'
-                  : 'none',
             }}
           ></span>
           <span
@@ -121,10 +117,10 @@ function Header({ onToggleMenu, isMenuOpen }) {
             }}
           >
             {backendStatus === 'connected'
-              ? 'Backend: Online'
+              ? 'System Online'
               : backendStatus === 'error'
-              ? 'Backend: Offline'
-              : 'Connecting...'}
+              ? 'Offline'
+              : 'Checking...'}
           </span>
         </div>
 
@@ -132,7 +128,7 @@ function Header({ onToggleMenu, isMenuOpen }) {
           <UserPlus size={14} /> <span>Register</span>
         </Link>
         <Link to="/predict" className="btn btn-primary btn-sm header-action-btn">
-          <Sparkles size={14} /> <span>Predict</span>
+          <TrendingUp size={14} /> <span>Predict</span>
         </Link>
       </div>
     </header>

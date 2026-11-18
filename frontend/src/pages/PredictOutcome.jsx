@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import {
-  Sparkles,
   User,
   Sliders,
   AlertTriangle,
@@ -320,11 +319,11 @@ export default function PredictOutcome() {
           <button
             type="button"
             className="btn btn-primary"
-            style={{ width: '100%', padding: '14px' }}
+            style={{ width: '100%', padding: '13px' }}
             disabled={predicting}
             onClick={handleRunPrediction}
           >
-            <Sparkles size={18} />
+            <TrendingUp size={18} />
             {predicting ? 'Executing ML Inference Pipeline...' : 'Generate Learning Outcome Prediction'}
           </button>
         </div>

@@ -4,7 +4,7 @@ import {
   LayoutDashboard,
   Users,
   UserPlus,
-  Sparkles,
+  TrendingUp,
   History,
   BarChart3,
   ArrowUpDown,
@@ -19,7 +19,7 @@ export default function Sidebar({ isOpen, onClose }) {
     { to: '/', label: 'Dashboard', icon: LayoutDashboard },
     { to: '/students', label: 'Students List', icon: Users },
     { to: '/students/new', label: 'Register Student', icon: UserPlus },
-    { to: '/predict', label: 'Predict Outcome', icon: Sparkles },
+    { to: '/predict', label: 'Predict Outcome', icon: TrendingUp },
     { to: '/history', label: 'Prediction History', icon: History },
     { to: '/analytics', label: 'Analytics & Reports', icon: BarChart3 },
     { to: '/data-transfer', label: 'CSV Import / Export', icon: ArrowUpDown },
@@ -31,22 +31,22 @@ export default function Sidebar({ isOpen, onClose }) {
     <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
       <div className="sidebar-brand">
         <div className="brand-icon">
-          <GraduationCap size={26} color="#ffffff" />
+          <GraduationCap size={22} color="#ffffff" />
         </div>
         <div className="brand-text">
           <h2>LearnAI</h2>
-          <span className="brand-subtitle">Outcome Prediction</span>
+          <span className="brand-subtitle">Academic Intelligence</span>
         </div>
         {onClose && (
           <button className="sidebar-close-btn" onClick={onClose} aria-label="Close menu">
-            <X size={20} />
+            <X size={18} />
           </button>
         )}
       </div>
 
       <div className="sidebar-tag">
         <span className="pulse-dot"></span>
-        College Minor Project
+        Dept. of Computer Science
       </div>
 
       <nav className="sidebar-nav">
@@ -61,7 +61,7 @@ export default function Sidebar({ isOpen, onClose }) {
               }}
               className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             >
-              <Icon size={19} className="nav-icon" />
+              <Icon size={18} className="nav-icon" />
               <span>{item.label}</span>
             </NavLink>
           );
@@ -72,9 +72,9 @@ export default function Sidebar({ isOpen, onClose }) {
         <div className="system-status">
           <div className="status-indicator">
             <span className="status-dot"></span>
-            <span className="status-text">Backend: Connected</span>
+            <span className="status-text">System Status: Online</span>
           </div>
-          <span className="db-info">SQLite • DRF • Scikit-Learn</span>
+          <span className="db-info">Medi-Caps University • CSE</span>
         </div>
       </div>
     </aside>

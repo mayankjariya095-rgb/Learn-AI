@@ -7,7 +7,7 @@ import {
   Download,
   Trash2,
   Edit,
-  Sparkles,
+  TrendingUp,
   ChevronLeft,
   ChevronRight,
   Filter,
@@ -272,7 +272,7 @@ export default function StudentsList() {
                           onClick={() => navigate(`/predict?student_id=${student.student_id}`)}
                           style={{ padding: '4px 8px' }}
                         >
-                          <Sparkles size={13} /> Predict
+                          <TrendingUp size={13} /> Predict
                         </button>
                         <button
                           className="btn btn-secondary btn-sm"

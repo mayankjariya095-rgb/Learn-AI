@@ -6,7 +6,6 @@ import {
   Database,
   Code2,
   CheckCircle,
-  Sparkles,
   BookOpen,
   ShieldCheck,
   FileText

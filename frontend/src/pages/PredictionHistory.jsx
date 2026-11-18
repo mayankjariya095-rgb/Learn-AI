@@ -5,7 +5,7 @@ import {
   Search,
   Download,
   Trash2,
-  Sparkles,
+  TrendingUp,
   ChevronLeft,
   ChevronRight,
   Filter,
@@ -89,7 +89,7 @@ export default function PredictionHistory() {
             <Download size={16} /> Export CSV
           </button>
           <Link to="/predict" className="btn btn-primary">
-            <Sparkles size={16} /> New Prediction
+            <TrendingUp size={16} /> New Prediction
           </Link>
         </div>
       </div>
@@ -156,7 +156,7 @@ export default function PredictionHistory() {
               Execute your first prediction in the predictor tool to log an audit entry.
             </p>
             <Link to="/predict" className="btn btn-primary btn-sm">
-              <Sparkles size={14} /> Run Prediction
+              <TrendingUp size={14} /> Run Prediction
             </Link>
           </div>
         ) : (

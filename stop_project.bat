@@ -11,6 +11,7 @@ taskkill /FI "WINDOWTITLE eq LearnAI - Frontend*" /T /F >nul 2>&1
 taskkill /FI "WINDOWTITLE eq LearnAI_Backend*" /T /F >nul 2>&1
 taskkill /FI "WINDOWTITLE eq LearnAI_Frontend*" /T /F >nul 2>&1
 taskkill /FI "WINDOWTITLE eq LearnAI Controller*" /T /F >nul 2>&1
+taskkill /f /im cloudflared.exe >nul 2>&1
 
 for /f "tokens=5" %%a in ('netstat -aon ^| findstr ":8000" ^| findstr "LISTENING"') do taskkill /f /t /pid %%a >nul 2>&1
 for /f "tokens=5" %%a in ('netstat -aon ^| findstr ":5173" ^| findstr "LISTENING"') do taskkill /f /t /pid %%a >nul 2>&1

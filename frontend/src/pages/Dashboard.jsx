@@ -5,7 +5,6 @@ import {
   AlertTriangle,
   Award,
   CalendarCheck,
-  Sparkles,
   ArrowRight,
   TrendingUp,
   RefreshCw,
@@ -25,11 +24,11 @@ import { api } from '../services/api';
 import CategoryBadge from '../components/CategoryBadge';
 
 const CATEGORY_COLORS = {
-  'At Risk': '#f43f5e',
-  'Needs Improvement': '#f59e0b',
-  'Satisfactory': '#0ea5e9',
-  'Good': '#8b5cf6',
-  'Excellent': '#10b981',
+  'At Risk': '#dc2626',
+  'Needs Improvement': '#d97706',
+  'Satisfactory': '#0284c7',
+  'Good': '#2563eb',
+  'Excellent': '#059669',
 };
 
 export default function Dashboard() {
@@ -97,18 +96,18 @@ export default function Dashboard() {
           alignItems: 'center',
           flexWrap: 'wrap',
           gap: '16px',
-          background: 'linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%)',
-          border: '1px solid rgba(99, 102, 241, 0.2)'
+          background: 'var(--bg-card)',
+          border: '1px solid var(--border-card)'
         }}
       >
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
-            <span className="badge badge-good">Academic Minor Project</span>
-            <span style={{ fontSize: '0.785rem', color: 'var(--text-dim)' }}>• Evaluation Ready</span>
+            <span className="badge badge-good">Institutional Analytics</span>
+            <span style={{ fontSize: '0.785rem', color: 'var(--text-dim)' }}>• Active Academic Session</span>
           </div>
           <h1 style={{ fontSize: '1.6rem', fontWeight: 800 }}>Student Learning Outcome Analytics</h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>
-            Real-time machine learning inference for early intervention and academic performance forecasting.
+            Predictive machine learning models for academic early intervention and performance evaluation.
           </p>
         </div>
 
@@ -128,7 +127,7 @@ export default function Dashboard() {
           </select>
 
           <Link to="/predict" className="btn btn-primary">
-            <Sparkles size={16} /> Predict Outcome
+            <TrendingUp size={16} /> Predict Outcome
           </Link>
         </div>
       </div>
@@ -231,7 +230,7 @@ export default function Dashboard() {
                   {chartData.map((entry, index) => (
                     <Cell
                       key={`cell-${index}`}
-                      fill={CATEGORY_COLORS[entry.name] || '#6366f1'}
+                      fill={CATEGORY_COLORS[entry.name] || '#2563eb'}
                     />
                   ))}
                 </Bar>

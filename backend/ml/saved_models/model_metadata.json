@@ -1,7 +1,7 @@
 {
   "selected_model": "Linear Regression (Baseline)",
   "model_version": "RF-v1.2",
-  "trained_at": "2026-10-26T14:24:59.681595+00:00",
+  "trained_at": "2026-11-03T16:10:09.040150+00:00",
   "dataset_path": "D:\\learnAI\\backend\\dataset\\student_data_train.csv",
   "total_records": 750,
   "train_records": 600,

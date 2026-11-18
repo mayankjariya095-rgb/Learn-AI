@@ -23,7 +23,7 @@ import {
 } from 'recharts';
 import { api } from '../services/api';
 
-const FEATURE_COLORS = ['#6366f1', '#06b6d4', '#10b981', '#f59e0b'];
+const FEATURE_COLORS = ['#2563eb', '#0284c7', '#059669', '#d97706'];
 
 export default function ModelMetrics() {
   const [metadata, setMetadata] = useState(null);

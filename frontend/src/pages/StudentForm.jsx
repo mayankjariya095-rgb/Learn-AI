@@ -4,7 +4,7 @@ import {
   UserPlus,
   Save,
   ArrowLeft,
-  Sparkles,
+  TrendingUp,
   AlertCircle,
   CheckCircle2,
   BookOpen,
@@ -215,9 +215,9 @@ export default function StudentForm() {
             <Link
               to={`/predict?student_id=${createdStudentId}`}
               className="btn btn-primary btn-sm"
-              style={{ background: 'var(--accent-emerald)' }}
+              style={{ background: '#059669', borderColor: '#047857' }}
             >
-              <Sparkles size={14} /> Run Prediction Now
+              <TrendingUp size={14} /> Run Prediction Now
             </Link>
           )}
         </div>
