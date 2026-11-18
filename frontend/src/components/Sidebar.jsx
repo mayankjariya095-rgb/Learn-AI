@@ -45,8 +45,7 @@ export default function Sidebar({ isOpen, onClose }) {
       </div>
 
       <div className="sidebar-tag">
-        <span className="pulse-dot"></span>
-        Dept. of Computer Science
+        Dept. of Computer Science & Engineering
       </div>
 
       <nav className="sidebar-nav">
@@ -70,10 +69,9 @@ export default function Sidebar({ isOpen, onClose }) {
 
       <div className="sidebar-footer">
         <div className="system-status">
-          <div className="status-indicator">
-            <span className="status-dot"></span>
-            <span className="status-text">System Status: Online</span>
-          </div>
+          <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#94a3b8' }}>
+            Academic Intelligence Portal
+          </span>
           <span className="db-info">Medi-Caps University • CSE</span>
         </div>
       </div>

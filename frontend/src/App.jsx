@@ -16,25 +16,6 @@ import './App.css';
 
 function Header({ onToggleMenu, isMenuOpen }) {
   const location = useLocation();
-  const [backendStatus, setBackendStatus] = useState('checking'); // 'connected' | 'error' | 'checking'
-
-  useEffect(() => {
-    let mounted = true;
-    const checkBackend = async () => {
-      try {
-        await api.healthCheck();
-        if (mounted) setBackendStatus('connected');
-      } catch (err) {
-        if (mounted) setBackendStatus('error');
-      }
-    };
-    checkBackend();
-    const interval = setInterval(checkBackend, 15000);
-    return () => {
-      mounted = false;
-      clearInterval(interval);
-    };
-  }, []);
 
   const getPageTitle = (path) => {
     if (path === '/') return 'Executive Dashboard';
@@ -68,62 +49,6 @@ function Header({ onToggleMenu, isMenuOpen }) {
       </div>
 
       <div className="header-actions">
-        <div
-          className="backend-status-pill"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            padding: '6px 12px',
-            borderRadius: 'var(--radius-sm)',
-            background:
-              backendStatus === 'connected'
-                ? 'rgba(16, 185, 129, 0.1)'
-                : backendStatus === 'error'
-                ? 'rgba(220, 38, 38, 0.1)'
-                : '#1e293b',
-            border: `1px solid ${
-              backendStatus === 'connected'
-                ? 'rgba(16, 185, 129, 0.25)'
-                : backendStatus === 'error'
-                ? 'rgba(220, 38, 38, 0.25)'
-                : '#334155'
-            }`,
-            fontSize: '0.75rem',
-            fontWeight: 600,
-          }}
-        >
-          <span
-            style={{
-              width: 7,
-              height: 7,
-              borderRadius: '50%',
-              backgroundColor:
-                backendStatus === 'connected'
-                  ? 'var(--accent-emerald)'
-                  : backendStatus === 'error'
-                  ? 'var(--accent-rose)'
-                  : 'var(--accent-amber)',
-            }}
-          ></span>
-          <span
-            style={{
-              color:
-                backendStatus === 'connected'
-                  ? 'var(--accent-emerald)'
-                  : backendStatus === 'error'
-                  ? 'var(--accent-rose)'
-                  : 'var(--text-dim)',
-            }}
-          >
-            {backendStatus === 'connected'
-              ? 'System Online'
-              : backendStatus === 'error'
-              ? 'Offline'
-              : 'Checking...'}
-          </span>
-        </div>
-
         <Link to="/students/new" className="btn btn-secondary btn-sm header-action-btn">
           <UserPlus size={14} /> <span>Register</span>
         </Link>
