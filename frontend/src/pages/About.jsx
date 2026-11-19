@@ -52,7 +52,7 @@ export default function About() {
         </h3>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '16px' }}>
-          <div style={{ padding: '18px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
+          <div style={{ padding: '18px', background: '#eceef2', borderRadius: 'var(--radius-md)', border: '1px solid #d1d5db' }}>
             <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--primary)', marginBottom: '8px' }}>01</div>
             <h4 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '6px' }}>Student Ingestion</h4>
             <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)' }}>
@@ -60,7 +60,7 @@ export default function About() {
             </p>
           </div>
 
-          <div style={{ padding: '18px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
+          <div style={{ padding: '18px', background: '#eceef2', borderRadius: 'var(--radius-md)', border: '1px solid #d1d5db' }}>
             <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--accent-cyan)', marginBottom: '8px' }}>02</div>
             <h4 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '6px' }}>ML Regression Inference</h4>
             <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)' }}>
@@ -68,7 +68,7 @@ export default function About() {
             </p>
           </div>
 
-          <div style={{ padding: '18px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
+          <div style={{ padding: '18px', background: '#eceef2', borderRadius: 'var(--radius-md)', border: '1px solid #d1d5db' }}>
             <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--accent-emerald)', marginBottom: '8px' }}>03</div>
             <h4 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '6px' }}>Risk & Interventions</h4>
             <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)' }}>
@@ -85,7 +85,7 @@ export default function About() {
         </h3>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
-          <div style={{ padding: '16px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
+          <div style={{ padding: '16px', background: '#eceef2', borderRadius: 'var(--radius-md)', border: '1px solid #d1d5db' }}>
             <h4 style={{ color: 'var(--primary)', fontSize: '0.95rem', marginBottom: '8px' }}>Backend & Database</h4>
             <ul style={{ listStyle: 'none', padding: 0, fontSize: '0.825rem', color: 'var(--text-muted)', display: 'flex', flexDirection: 'column', gap: '6px' }}>
               <li>• Python 3.14 & Django 5.0 REST Framework</li>
@@ -95,7 +95,7 @@ export default function About() {
             </ul>
           </div>
 
-          <div style={{ padding: '16px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
+          <div style={{ padding: '16px', background: '#eceef2', borderRadius: 'var(--radius-md)', border: '1px solid #d1d5db' }}>
             <h4 style={{ color: 'var(--accent-cyan)', fontSize: '0.95rem', marginBottom: '8px' }}>Machine Learning</h4>
             <ul style={{ listStyle: 'none', padding: 0, fontSize: '0.825rem', color: 'var(--text-muted)', display: 'flex', flexDirection: 'column', gap: '6px' }}>
               <li>• Scikit-Learn 1.4+ (Linear Regression & Random Forest)</li>
@@ -105,7 +105,7 @@ export default function About() {
             </ul>
           </div>
 
-          <div style={{ padding: '16px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
+          <div style={{ padding: '16px', background: '#eceef2', borderRadius: 'var(--radius-md)', border: '1px solid #d1d5db' }}>
             <h4 style={{ color: 'var(--accent-emerald)', fontSize: '0.95rem', marginBottom: '8px' }}>Frontend & UI</h4>
             <ul style={{ listStyle: 'none', padding: 0, fontSize: '0.825rem', color: 'var(--text-muted)', display: 'flex', flexDirection: 'column', gap: '6px' }}>
               <li>• React 18 & Vite high-speed dev runtime</li>

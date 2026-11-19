@@ -101,7 +101,7 @@ export default function DataTransfer() {
                 borderRadius: 'var(--radius-lg)',
                 padding: '36px 20px',
                 textAlign: 'center',
-                backgroundColor: '#f8fafc',
+                backgroundColor: '#eceef2',
                 marginBottom: '18px',
                 cursor: 'pointer',
               }}

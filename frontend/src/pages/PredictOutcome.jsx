@@ -129,8 +129,8 @@ export default function PredictOutcome() {
           padding: '6px',
           gap: '8px',
           marginBottom: '24px',
-          background: '#f1f5f9',
-          border: '1px solid #e2e8f0',
+          background: '#e8eaee',
+          border: '1px solid #d1d5db',
           width: 'fit-content',
         }}
       >
@@ -188,8 +188,8 @@ export default function PredictOutcome() {
                   style={{
                     marginTop: '8px',
                     padding: '8px 12px',
-                    background: '#f8fafc',
-                    border: '1px solid #e2e8f0',
+                    background: '#eceef2',
+                    border: '1px solid #d1d5db',
                     borderRadius: 'var(--radius-sm)',
                     fontSize: '0.8rem',
                     color: 'var(--text-muted)',
@@ -363,8 +363,8 @@ export default function PredictOutcome() {
                   style={{
                     padding: '10px 16px',
                     borderRadius: 'var(--radius-md)',
-                    background: '#f8fafc',
-                    border: '1px solid #e2e8f0',
+                    background: '#eceef2',
+                    border: '1px solid #d1d5db',
                     textAlign: 'right',
                   }}
                 >
@@ -445,8 +445,8 @@ export default function PredictOutcome() {
                         key={key}
                         style={{
                           padding: '10px 12px',
-                          background: '#f8fafc',
-                          border: '1px solid #e2e8f0',
+                          background: '#eceef2',
+                          border: '1px solid #d1d5db',
                           borderRadius: '8px',
                         }}
                       >

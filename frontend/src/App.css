@@ -6,11 +6,11 @@
   background-color: var(--bg-dark);
 }
 
-/* Sidebar Styling - Clean Light Surface */
+/* Sidebar Styling - Clean Grey Surface */
 .sidebar {
   width: 260px;
-  background: #ffffff;
-  border-right: 1px solid #e2e8f0;
+  background: #f0f2f5;
+  border-right: 1px solid #d1d5db;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #d1d5db;
 }
 
 .brand-icon {
@@ -60,8 +60,8 @@
   margin: 12px 14px 6px;
   padding: 7px 12px;
   border-radius: var(--radius-sm);
-  background: #f1f5f9;
-  border: 1px solid #e2e8f0;
+  background: #e8eaee;
+  border: 1px solid #d1d5db;
   color: #475569;
   font-size: 0.735rem;
   font-weight: 600;
@@ -94,7 +94,7 @@
 
 .nav-link:hover {
   color: #0f172a;
-  background: #f8fafc;
+  background: #eceef2;
 }
 
 .nav-link.active {
@@ -110,8 +110,8 @@
 
 .sidebar-footer {
   padding: 14px 16px;
-  border-top: 1px solid #e2e8f0;
-  background: #f8fafc;
+  border-top: 1px solid #d1d5db;
+  background: #eceef2;
 }
 
 .system-status {
@@ -136,8 +136,8 @@
 
 .top-header {
   height: 60px;
-  background: #ffffff;
-  border-bottom: 1px solid #e2e8f0;
+  background: #f0f2f5;
+  border-bottom: 1px solid #d1d5db;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -202,8 +202,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: #f0f2f5;
+  border: 1px solid #d1d5db;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
@@ -328,8 +328,8 @@
   gap: 14px;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: #f0f2f5;
+  border: 1px solid #d1d5db;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
 }
@@ -365,7 +365,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 14px 20px;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid #d1d5db;
   font-size: 0.835rem;
   color: #64748b;
 }
@@ -377,10 +377,10 @@
 
 /* Prediction Showcase Panel - Clean Light Card */
 .prediction-showcase {
-  background: #ffffff;
+  background: #f0f2f5;
   padding: 26px;
   border-radius: var(--radius-lg);
-  border: 1px solid #e2e8f0;
+  border: 1px solid #d1d5db;
   box-shadow: var(--shadow-md);
   margin-top: 24px;
 }
@@ -392,7 +392,7 @@
   flex-wrap: wrap;
   gap: 20px;
   padding-bottom: 22px;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #d1d5db;
 }
 
 .score-big {
@@ -545,8 +545,8 @@
   min-width: 300px;
   padding: 12px 16px;
   border-radius: var(--radius-md);
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: #f0f2f5;
+  border: 1px solid #d1d5db;
   box-shadow: var(--shadow-lg);
   display: flex;
   align-items: center;
@@ -583,7 +583,7 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: #f1f5f9;
+  background: #e8eaee;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -599,15 +599,15 @@
   width: 36px;
   height: 36px;
   border-radius: var(--radius-md);
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background: #eceef2;
+  border: 1px solid #d1d5db;
   color: #0f172a;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .mobile-menu-btn:hover {
-  background: #f1f5f9;
+  background: #e8eaee;
 }
 
 .sidebar-close-btn {
@@ -618,8 +618,8 @@
   height: 30px;
   margin-left: auto;
   border-radius: var(--radius-sm);
-  background: #f1f5f9;
-  border: 1px solid #e2e8f0;
+  background: #e8eaee;
+  border: 1px solid #d1d5db;
   color: #64748b;
   cursor: pointer;
 }

@@ -227,7 +227,7 @@ export default function ModelMetrics() {
                 <YAxis type="category" dataKey="name" stroke="#64748b" fontSize={12} tickLine={false} />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: '#ffffff',
+                    backgroundColor: '#f0f2f5',
                     borderColor: '#e2e8f0',
                     borderRadius: '8px',
                     color: '#0f172a',
@@ -295,8 +295,8 @@ export default function ModelMetrics() {
             style={{
               marginTop: '16px',
               padding: '12px 14px',
-              background: '#f1f5f9',
-              border: '1px solid #e2e8f0',
+              background: '#e8eaee',
+              border: '1px solid #d1d5db',
               borderRadius: 'var(--radius-md)',
               fontSize: '0.8rem',
               color: 'var(--text-muted)',

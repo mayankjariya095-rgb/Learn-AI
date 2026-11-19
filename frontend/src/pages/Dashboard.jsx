@@ -220,7 +220,7 @@ export default function Dashboard() {
                 <YAxis stroke="#64748b" fontSize={12} tickLine={false} />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: '#ffffff',
+                    backgroundColor: '#f0f2f5',
                     borderColor: '#e2e8f0',
                     borderRadius: '8px',
                     color: '#0f172a',

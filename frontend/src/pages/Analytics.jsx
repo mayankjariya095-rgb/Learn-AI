@@ -160,7 +160,7 @@ export default function Analytics() {
                 </Pie>
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: '#ffffff',
+                    backgroundColor: '#f0f2f5',
                     borderColor: '#e2e8f0',
                     borderRadius: '8px',
                     color: '#0f172a',
@@ -187,7 +187,7 @@ export default function Analytics() {
                 <YAxis stroke="#64748b" fontSize={11} tickLine={false} />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: '#ffffff',
+                    backgroundColor: '#f0f2f5',
                     borderColor: '#e2e8f0',
                     borderRadius: '8px',
                     color: '#0f172a',
@@ -210,21 +210,21 @@ export default function Analytics() {
         </h3>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '16px' }}>
-          <div style={{ padding: '16px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
+          <div style={{ padding: '16px', background: '#eceef2', borderRadius: 'var(--radius-md)', border: '1px solid #d1d5db' }}>
             <h4 style={{ color: 'var(--accent-cyan)', fontSize: '0.95rem', marginBottom: '6px' }}>Attendance Impact Rule</h4>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
               Data shows students maintaining &gt; 80% attendance exhibit a +18.4% higher probability of reaching Satisfactory or Good categories.
             </p>
           </div>
 
-          <div style={{ padding: '16px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
+          <div style={{ padding: '16px', background: '#eceef2', borderRadius: 'var(--radius-md)', border: '1px solid #d1d5db' }}>
             <h4 style={{ color: 'var(--accent-emerald)', fontSize: '0.95rem', marginBottom: '6px' }}>Study Habit Threshold</h4>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
               Daily study of at least 3.5 hours directly prevents critical final score variance, dampening academic attrition during midterms.
             </p>
           </div>
 
-          <div style={{ padding: '16px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
+          <div style={{ padding: '16px', background: '#eceef2', borderRadius: 'var(--radius-md)', border: '1px solid #d1d5db' }}>
             <h4 style={{ color: 'var(--accent-rose)', fontSize: '0.95rem', marginBottom: '6px' }}>Early Warning Protocol</h4>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
               Identified {data?.at_risk_students_count || 0} students who require urgent remedial coaching before final university semester assessments.
