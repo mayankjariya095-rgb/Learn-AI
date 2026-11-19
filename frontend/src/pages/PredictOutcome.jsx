@@ -129,7 +129,8 @@ export default function PredictOutcome() {
           padding: '6px',
           gap: '8px',
           marginBottom: '24px',
-          background: 'rgba(15, 23, 42, 0.6)',
+          background: '#f1f5f9',
+          border: '1px solid #e2e8f0',
           width: 'fit-content',
         }}
       >
@@ -187,7 +188,8 @@ export default function PredictOutcome() {
                   style={{
                     marginTop: '8px',
                     padding: '8px 12px',
-                    background: 'rgba(255, 255, 255, 0.03)',
+                    background: '#f8fafc',
+                    border: '1px solid #e2e8f0',
                     borderRadius: 'var(--radius-sm)',
                     fontSize: '0.8rem',
                     color: 'var(--text-muted)',
@@ -361,8 +363,8 @@ export default function PredictOutcome() {
                   style={{
                     padding: '10px 16px',
                     borderRadius: 'var(--radius-md)',
-                    background: 'rgba(255, 255, 255, 0.04)',
-                    border: '1px solid var(--border-subtle)',
+                    background: '#f8fafc',
+                    border: '1px solid #e2e8f0',
                     textAlign: 'right',
                   }}
                 >
@@ -443,9 +445,9 @@ export default function PredictOutcome() {
                         key={key}
                         style={{
                           padding: '10px 12px',
-                          background: 'rgba(255, 255, 255, 0.03)',
+                          background: '#f8fafc',
+                          border: '1px solid #e2e8f0',
                           borderRadius: '8px',
-                          border: '1px solid rgba(255, 255, 255, 0.05)',
                         }}
                       >
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

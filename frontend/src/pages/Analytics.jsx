@@ -160,10 +160,11 @@ export default function Analytics() {
                 </Pie>
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: '#111827',
-                    borderColor: 'rgba(255,255,255,0.1)',
+                    backgroundColor: '#ffffff',
+                    borderColor: '#e2e8f0',
                     borderRadius: '8px',
-                    color: '#f8fafc',
+                    color: '#0f172a',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
                   }}
                 />
               </PieChart>
@@ -181,15 +182,16 @@ export default function Analytics() {
           <div style={{ width: '100%', height: 300 }}>
             <ResponsiveContainer>
               <BarChart data={courseData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
-                <XAxis dataKey="course" stroke="#94a3b8" fontSize={11} tickLine={false} />
-                <YAxis stroke="#94a3b8" fontSize={11} tickLine={false} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                <XAxis dataKey="course" stroke="#64748b" fontSize={11} tickLine={false} />
+                <YAxis stroke="#64748b" fontSize={11} tickLine={false} />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: '#111827',
-                    borderColor: 'rgba(255,255,255,0.1)',
+                    backgroundColor: '#ffffff',
+                    borderColor: '#e2e8f0',
                     borderRadius: '8px',
-                    color: '#f8fafc',
+                    color: '#0f172a',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
                   }}
                 />
                 <Legend wrapperStyle={{ paddingTop: '10px' }} />
@@ -208,21 +210,21 @@ export default function Analytics() {
         </h3>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '16px' }}>
-          <div style={{ padding: '16px', background: 'rgba(255, 255, 255, 0.02)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+          <div style={{ padding: '16px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
             <h4 style={{ color: 'var(--accent-cyan)', fontSize: '0.95rem', marginBottom: '6px' }}>Attendance Impact Rule</h4>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
               Data shows students maintaining &gt; 80% attendance exhibit a +18.4% higher probability of reaching Satisfactory or Good categories.
             </p>
           </div>
 
-          <div style={{ padding: '16px', background: 'rgba(255, 255, 255, 0.02)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+          <div style={{ padding: '16px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
             <h4 style={{ color: 'var(--accent-emerald)', fontSize: '0.95rem', marginBottom: '6px' }}>Study Habit Threshold</h4>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
               Daily study of at least 3.5 hours directly prevents critical final score variance, dampening academic attrition during midterms.
             </p>
           </div>
 
-          <div style={{ padding: '16px', background: 'rgba(255, 255, 255, 0.02)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
+          <div style={{ padding: '16px', background: '#f8fafc', borderRadius: 'var(--radius-md)', border: '1px solid #e2e8f0' }}>
             <h4 style={{ color: 'var(--accent-rose)', fontSize: '0.95rem', marginBottom: '6px' }}>Early Warning Protocol</h4>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
               Identified {data?.at_risk_students_count || 0} students who require urgent remedial coaching before final university semester assessments.

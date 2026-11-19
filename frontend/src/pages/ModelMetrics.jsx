@@ -222,15 +222,16 @@ export default function ModelMetrics() {
                 data={importanceData}
                 margin={{ top: 10, right: 30, left: 40, bottom: 0 }}
               >
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
-                <XAxis type="number" stroke="#94a3b8" fontSize={11} domain={[0, 40]} />
-                <YAxis type="category" dataKey="name" stroke="#94a3b8" fontSize={12} tickLine={false} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                <XAxis type="number" stroke="#64748b" fontSize={11} domain={[0, 40]} />
+                <YAxis type="category" dataKey="name" stroke="#64748b" fontSize={12} tickLine={false} />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: '#111827',
-                    borderColor: 'rgba(255,255,255,0.1)',
+                    backgroundColor: '#ffffff',
+                    borderColor: '#e2e8f0',
                     borderRadius: '8px',
-                    color: '#f8fafc',
+                    color: '#0f172a',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
                   }}
                   formatter={(val) => [`${val}%`, 'Importance Weight']}
                 />
@@ -294,7 +295,8 @@ export default function ModelMetrics() {
             style={{
               marginTop: '16px',
               padding: '12px 14px',
-              background: 'rgba(255, 255, 255, 0.02)',
+              background: '#f1f5f9',
+              border: '1px solid #e2e8f0',
               borderRadius: 'var(--radius-md)',
               fontSize: '0.8rem',
               color: 'var(--text-muted)',
@@ -316,7 +318,8 @@ export default function ModelMetrics() {
           style={{
             padding: '16px 20px',
             marginTop: '20px',
-            background: 'rgba(255, 255, 255, 0.02)',
+            background: '#fffbeb',
+            border: '1px solid #fde68a',
             borderLeft: '4px solid var(--accent-amber)',
           }}
         >

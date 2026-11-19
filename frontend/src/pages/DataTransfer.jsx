@@ -97,11 +97,11 @@ export default function DataTransfer() {
           <form onSubmit={handleUpload}>
             <div
               style={{
-                border: '2px dashed var(--border-subtle)',
+                border: '2px dashed #cbd5e1',
                 borderRadius: 'var(--radius-lg)',
                 padding: '36px 20px',
                 textAlign: 'center',
-                backgroundColor: 'rgba(15, 23, 42, 0.4)',
+                backgroundColor: '#f8fafc',
                 marginBottom: '18px',
                 cursor: 'pointer',
               }}

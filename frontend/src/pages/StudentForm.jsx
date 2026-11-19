@@ -197,8 +197,8 @@ export default function StudentForm() {
           style={{
             padding: '16px 20px',
             marginBottom: '20px',
-            borderColor: 'rgba(16, 185, 129, 0.4)',
-            background: 'rgba(16, 185, 129, 0.1)',
+            borderColor: '#a7f3d0',
+            background: '#d1fae5',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
@@ -207,8 +207,8 @@ export default function StudentForm() {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <CheckCircle2 size={20} color="#10b981" />
-            <span style={{ color: '#86efac', fontWeight: 600, fontSize: '0.925rem' }}>{successMsg}</span>
+            <CheckCircle2 size={20} color="#059669" />
+            <span style={{ color: '#065f46', fontWeight: 600, fontSize: '0.925rem' }}>{successMsg}</span>
           </div>
 
           {!isEdit && createdStudentId && (
