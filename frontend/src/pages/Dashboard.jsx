@@ -27,8 +27,8 @@ const CATEGORY_COLORS = {
   'At Risk': '#dc2626',
   'Needs Improvement': '#d97706',
   'Satisfactory': '#0284c7',
-  'Good': '#2563eb',
-  'Excellent': '#059669',
+  'Good': '#059669',
+  'Excellent': '#10b981',
 };
 
 export default function Dashboard() {
@@ -230,7 +230,7 @@ export default function Dashboard() {
                   {chartData.map((entry, index) => (
                     <Cell
                       key={`cell-${index}`}
-                      fill={CATEGORY_COLORS[entry.name] || '#2563eb'}
+                      fill={CATEGORY_COLORS[entry.name] || '#059669'}
                     />
                   ))}
                 </Bar>

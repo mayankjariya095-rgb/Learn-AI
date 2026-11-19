@@ -193,8 +193,8 @@ export default function Analytics() {
                   }}
                 />
                 <Legend wrapperStyle={{ paddingTop: '10px' }} />
-                <Bar dataKey="avg_attendance" name="Avg Attendance %" fill="#059669" radius={[4, 4, 0, 0]} />
-                <Bar dataKey="avg_previous_marks" name="Avg Score %" fill="#2563eb" radius={[4, 4, 0, 0]} />
+                <Bar dataKey="avg_attendance" name="Avg Attendance %" fill="#10b981" radius={[4, 4, 0, 0]} />
+                <Bar dataKey="avg_previous_marks" name="Avg Score %" fill="#059669" radius={[4, 4, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>
